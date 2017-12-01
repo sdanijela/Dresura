@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dresura_sajt</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1"> 
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="jquery.stellar.js"></script>
+	<!-- <script type="text/javascript" src="script.js"></script> -->
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$(window).stellar();
+		});
+
+		function imaProgram(elem) {
+			var tar = document.getElementById(elem)
+			if (document.getElementById(elem).style.height == "300px") {
+				tar.style.transition = "height .3s linear 0s";
+				tar.style.height = "0px";
+			}
+			else
+				tar.style.height = "300px";
+		}	
+
+	</script> 
+
+</head>
+<body>
+	<header>
+		<div id="logo"></div>
+		<a name="#top"><h1>najbolji prijatelj</h1></a>
+		<p>Centar za dresuru pasa</p>
+
+		<nav>
+			<ul>
+				<a href="#onama"><li>O nama</li></a>
+				<a href="#dresura"><li>Dresura</li></a>
+				<a href="#kontakt"><li>Kontakt</li></a>
+				<a href="#prijava"><li>Prijava</li></a>		
+			</ul>
+		</nav>
+
+		<ul class="pismo">
+		 	<a href=""><li class="navCir">English</li></a>
+		 	<a href=""><li class="navCir">Ћирилица</li></a>
+		 	<a href=""><li class="navLat">Latinica</li></a>
+		</ul>
+	</header>
+
+	<div id="prvi" class="image"></div>
+
+
+	<div id="content1" class="content">
+		<div class="krug"><img src="slike/home.png" width="200px" height="200px"></div>
+
+		<a name="onama">
+		<h1>O nama</h1>
+
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+		<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+		</a>
+
+	</div>
+
+	<div id="drugi" class="image" data-stellar-background-ratio="0.3"></div>
+
+	<div id="content2" class="content">
+		<div class="krug"><img src="slike/pasikon.png" width="200px" height="200px"></div>
+
+		<a name="dresura">
+		<h1>Dresura</h1>
+
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+		<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+
+		</a>
+
+		<img id="dres" src="slike/emotion.png" width="35%">
+
+		<div onmousedown="imaProgram('program')" class="izaberi-program">
+			<p>programi dresure</p>
+		</div>
+
+	</div>
+
+	<div id="program">
+		<section id="jedan" class="sekcija">
+			<div class=naslov>Program 1</div>
+			<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<br>
+			<ul>
+				<li>Dva puta nedeljno</li>
+				<li>Dva sata dnevno</li>
+				<li>Trajanje obuke: pet meseci</li>
+			</ul>
+		</section>
+		<section id="dva" class="sekcija">
+			<div class=naslov>Program 2</div>
+			<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<br>
+			<ul>
+				<li>Četiri puta nedeljno</li>
+				<li>Tri sata dnevno</li>
+				<li>Trajanje obuke: četiri meseca</li>
+			</ul>
+		</section>
+		<section id="tri" class="sekcija">
+			<div class=naslov>Program 3</div>
+			<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<br>
+			<ul>
+				<li>Tri puta nedeljno</li>
+				<li>Dva sata dnevno</li>
+				<li>Trajanje obuke: tri meseca</li>
+			</ul>
+		</section>
+	</div>
+
+	<div id="treci" class="image" data-stellar-background-ratio="0.3"></div>
+
+	<div id="content3" class="content">
+		<div class="krug"><img src="slike/phone4.png" width="200px" height="200px"></div>
+
+		<a name="kontakt">
+		<h1>Kontakt</h1>
+
+		</a>
+
+		<div class="kontakt">
+			<div class="tekst">
+				<p id="kontakti">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+			</div>
+
+
+			<div id="forma">
+				<form id="unos">
+					Ime:<br>
+				 	<input class="podaci" type="text" name="ime">
+				  	<br>
+				  	Prezime:<br>
+				  	<input class="podaci" type="text" name="prezime">
+					<br>
+					<br>
+				  	<textarea rows="6" cols="40"></textarea>
+				  	<br><br>
+				  	<input id="submit" type="submit" value="POŠALJI">
+				</form> 
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="cetvrti" class="image"
+	data-stellar-background-ratio="0.3"></div>
+
+	<div id="content4" class="content">
+		<div class="krug"><img src="slike/singin.png" width="200px" height="200px"></div>
+
+		<a name="oprijava">
+		<h1>Prijava</h1>
+
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+		</a>
+
+		<div id="prijava">
+		<div id="forma2">
+			<h3>Forma za prijavu</h3>
+				<form id="unos2">
+					<label>Ime i prezime vlasnika:</label>
+				 	<input class="podaci2" type="text" name="imeprezime" required="true">
+				  	<br>
+				  	<label>Ime psa:</label>
+				  	<input class="podaci2" type="text" name="imepsa" required="true">
+				  	<br>
+				  	<label>Broj pasoša:</label>
+				 	<input class="podaci2" type="text" name="pasos" required="true">
+				  	<br>
+				  	<label>Datum početka treninga:</label>
+				  	<input class="podaci2" type="text" name="trening" required="true">
+				  	<br>
+				  	<label>Broj telefona:</label>
+				 	<input class="podaci2" type="text" name="telefon" required="true">
+				  	<br>
+				  	<label>E-mail adresa:</label>
+				  	<input class="podaci2" type="email" name="email" required="true">
+				  	<br>
+				</form> 
+				<div id="pored">
+					<ul>
+						<li class="prij">Program 1</li>
+						<li class="prij">Program 2</li>
+						<li class="prij">Program 3</li>
+						<input id="submit2" type="submit" value="Prijavi se">
+					</ul>
+				</div>
+			</div>
+	</div>
+
+	</div>
+
+
+	
+
+	<footer id="futer1">
+
+		<section>
+			<h3><b>Najbolji prijatelj</b></h3><br>
+			<p>Email: najboljiprijatelj@gmail.com<br>
+			Tel: <b> 011 589 56 89</b><br>
+			Andrije Milosevića 45a<br>
+			11000 Beograd, Srbija
+
+			</p>
+		</section>
+
+		<section>
+			<h3>Povežite se sa nama!</h3>
+			<ul class="drustveni">
+				<li><a href="#"><img src="slike/instagram.png" width="50px" height="50px" /></a></li>
+				<li><a href="#"><img src="slike/twitter.png" width="50px" height="50px"/></a></li>
+				<li><a href="#"><img src="slike/facebook.png" width="50px" height="50px"/></a></li>
+				<li><a href="#"><img src="slike/gplus.png"  width="50px" height="50px"/></a></li>
+			</ul>		
+		</section>
+
+		<section >
+			<img id="sapica-slika" src="slike/paw.png" width="200px" height="150px">
+			<a href="#"><img id="up" src="slike/arrow.png" width="50px" height="50px"></a>
+		</section>
+
+	</footer>
+
+	<footer id="futer2">
+	@Copyright Najbolji prijatelj 2016
+	</footer>
+
+
+</body>
+</html>
